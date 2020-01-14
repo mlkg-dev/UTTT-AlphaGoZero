@@ -11,7 +11,7 @@ class DataReader:
 
     def __init__(self):
         self.batch_size = 2048
-        self.game_pool = len(os.listdir("Games/"))
+        self.game_pool = len(os.listdir("Games/")) - 1 #.keep
 
     def read_json(self):
         pass
